@@ -88,7 +88,7 @@ class WordGame:
         """
         for _ in range(3):
             try:
-                url = 'http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEN.txt'
+                url = 'https://raw.githubusercontent.com/dwyl/english-words/master/words.txt'
                 urllib.request.urlretrieve(url, 'English Words.txt', reporthook=cls.report)
                 return
             except urllib.error.URLError as error:
